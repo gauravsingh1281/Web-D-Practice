@@ -1,0 +1,44 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        main {
+            background-color: rgb(241, 248, 255);
+            height: 100%;
+            width: 100%;
+        }
+
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 50%;
+            filter: grayscale(1);
+            transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.5s;
+            border: 5px solid lime;
+        }
+
+        #two {
+            left: 25%;
+        }
+
+        #three {
+            left: 75%
+        }
+
+        img:hover {
+            height: 75%;
+            filter: grayscale(0);
+            border-radius: 42%;
+            border: 5px solid lime;
+
+        }
