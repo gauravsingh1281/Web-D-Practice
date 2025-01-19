@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bug Store Landing page</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main class="w-full h-screen flex justify-center items-center relative">
+        <!--Part 1 -->
+        <div class="bg-[#E94E4E] h-3/4 absolute top-0 left-0 w-[335px]"></div>
+        <!--Part 2 -->
+        <div class="w-2/4 bg-[#ECB678] h-full"></div>
+        <!--Part 3 -->
+        <div class=" w-2/4 bg-[#227E81] h-full"></div>
+        <!--container -->
+        <div
+            class=" flex justify-center items-center w-4/5 absolute bg-white h-[480px] top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 ">
+            <!--Container Part 1 -->
+            <div class="w-2/4 h-full bg-white">
+                <nav class="w-full h-14  flex items-center justify-between pr-3 ">
+                    <div class="flex justify-center items-center gap-2 bg-[#227E81] h-full w-52">
+                        <img class="w-6 h-6" src="images/logo.png" alt="logo">
+                        <h1 class="text-white font-bold">INSECT</h1>
+                    </div>
+                    <input type="search" placeholder="search"
+                        class=" bg-[#F0F0F0] bg-[url(images/search-line.png)] bg-no-repeat bg-[6px_5px] rounded-full pl-9 font-semibold py-[6px] pr-3">
+                </nav>
+                <!--Classification detail -->
+                <div class="py-12 flex justify-start items-center">
+                    <h1 class="-rotate-90 text-4xl drop-shadow-[0_1px_1px_rgba(0,0,0,1)] text-white">Classification</h1>
+                    <div class="flex justify-between  gap-2 flex-col text-">
+                        <div>
+                            <h1 class="font-bold">Class:</h1>
+                            <p class="text-[#808784] font-semibold">Insecta</p>
+                        </div>
+                        <div>
+                            <h1 class="font-bold">Order:</h1>
+                            <p class="text-[#808784] font-semibold">Coleoptera</p>
+                        </div>
+                        <div>
+                            <h1 class="font-bold">Family:</h1>
+                            <p class="text-[#808784] font-semibold">Cerambycidae</p>
+                        </div>
+                        <div>
+                            <h1 class="font-bold">SubFamily:</h1>
+                            <p class="text-[#808784] font-semibold">Cerambycinae</p>
+                        </div>
+                        <div>
+                            <h1 class="font-bold">Tribe:</h1>
+                            <p class="text-[#808784] font-semibold">Callichromatini</p>
+                        </div>
+                        <div>
+                            <h1 class="font-bold">Genus:</h1>
+                            <p class="text-[#808784] font-semibold">Pachyteria</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Container Part 2 -->
+            <div class="w-2/4 h-full bg-[#E94E4E] relative">
+                <nav class="w-full h-14  flex items-center justify-between px-3 text-white font-semibold ">
+                    <a href="#">Home</a>
+                    <a href="#">Shop</a>
+                    <a href="#">About</a>
+                    <a href="#" class="px-[12px] py-[7px] bg-white rounded-full text-[#227E81] text-lg">
+                        <i class="ri-shopping-bag-line "></i>
+                    </a>
+                </nav>
+                <!-- insects-details -->
+                <div class="absolute right-6 h-3/4 w-[328px]   flex justify-between flex-col gap-2 p-6">
+                    <h1 class="font-bold text-3xl text-white">Pachyteria <br> equestris</h1>
+                    <!-- insects-desc. -->
+                    <div class="flex justify-between items-center gap-2 text-white font-semibold">
+                        <div><img class="w-[120px]" src="./images/insect-dimension.png" alt="insect-dimension"></div>
+                        <div>
+                            <p><span class="text-[#DCDCDC]">Locality:</span>&nbsp;Malaysia</p>
+                            <p><span class="text-[#DCDCDC]">Sex:</span>&nbsp;Male</p>
+                            <p class="text-2xl font-bold"> &dollar; 5.99</p>
+                        </div>
+                    </div>
+                    <!-- call to actions -->
+                    <div class="flex justify-between items-center gap-2 w-full">
+                        <div>
+                            <p
+                                class="border-2 border-[#DCDCDC] text-white py-2 px-6 rounded-full text-md font-semibold hover:border-black hover:text-black cursor-pointer hover:bg-[#fceded]">
+                                - 1 +</p>
+                        </div>
+                        <div>
+                            <p
+                                class="bg-black text-white py-2 px-4 rounded-full text-md font-semibold hover:bg-white hover:text-black transition-all cursor-pointer">
+                                ADD TO CART
+                                &nbsp;&nbsp;<i
+                                    class="ri-shopping-bag-line px-[6px] py-[7px] bg-white rounded-full text-[#227E81] text-lg hover:bg-black hover:text-white transition-all cursor-pointer"></i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="absolute -bottom-9 right-6 text-white flex items-center justify-center gap-3 text-xl">
+                        <i class="ri-facebook-fill hover:text-black cursor-pointer "></i>
+                        <i class="ri-twitter-x-line hover:text-black cursor-pointer "></i>
+                        <i class="ri-instagram-line hover:text-black cursor-pointer"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <img class="absolute top-1/2 left-[49.5%] -translate-y-1/2 -translate-x-[49.77%] w-[262px] "
+                    src="./images/glass-jar.png" alt="glass-jar">
+
+                <img class="absolute top-1/2 left-[50%] -translate-y-1/2 -translate-x-1/2 w-[150px] transition-all hover:top-[42%] hover:drop-shadow-[0_35px_35px_rgba(250,255,0,0.8)]"
+                    src="./images/insects.png" alt="insects-img">
+            </div>
+
+        </div>
+    </main>
+</body>
+
+</html>
