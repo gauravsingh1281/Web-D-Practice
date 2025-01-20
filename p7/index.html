@@ -13,7 +13,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="w-full h-full">
+<body class="font-[mona-sans] ">
     <main class="w-full h-full">
         <header>
             <nav class="w-full h-20  flex justify-between items-center p-6">
@@ -42,8 +42,21 @@
                 <p class="text-xl text-center font-light">Explore work from the most talented and accomplished
                     designers<br> ready to take on your next
                     project</p>
-                <input class="w-1/2 py-4 px-4 border-0 rounded-full bg-[#f1f1f1]" type="search"
-                    placeholder="What are you looking for?">
+                <div class="w-1/2 flex justify-center items-center relative ">
+                    <input
+                        class="w-full outline-none py-4 px-4 border-2 border-transparent rounded-full bg-[#f1f1f1] font-normal placeholder:text-black  hover:bg-white hover:border-[#ffdbf9]"
+                        type="search" placeholder="What are you looking for?">
+                    <div class=" absolute right-0 flex items-center justify-center gap-3 py-0 px-7  ">
+                        <div class="flex justify-center items-center font-semibold cursor-pointer">Shots <i
+                                class="ri-arrow-drop-down-line text-2xl font-light "></i>
+                        </div>
+                        <div><i
+                                class="ri-search-line text-xl px-2 py-2 bg-[#EA4C89] text-white rounded-full cursor-pointer"></i>
+                        </div>
+                    </div>
+                </div>
+
+
                 <div class="flex justify-center items-center gap-8 ">
                     <div class="text-[#b2aeae]">Trending searches</div>
                     <div class="bg-[#F1F1F1] py-1 px-4 rounded-full ">landing page</div>
@@ -55,7 +68,27 @@
                 </div>
             </section>
         </header>
-        <section class="w-full  flex items-center justify-center flex-wrap p-6 gap-8">
+        <section class="w-full h-20  flex justify-between items-center px-7 cursor-pointer">
+            <div class="flex justify-center items-center gap-2  border-2 py-1 px-3 rounded-lg">
+                <p>Popular</p>
+                <i class="ri-arrow-drop-down-line text-2xl "></i>
+            </div>
+            <div class="flex justify-center items-center gap-10 ">
+                <div class="bg-[#F1F1F1] py-1 px-4 rounded-full ">Discover</div>
+                <div>Animation</div>
+                <div>Branding</div>
+                <div>Illustration</div>
+                <div>Mobile</div>
+                <div>Print</div>
+                <div>Product Design</div>
+                <div><i class="ri-arrow-drop-right-line text-3xl"></i></div>
+            </div>
+            <div class="flex justify-center items-center gap-3 border-2 py-1 px-4 rounded-full">
+                <i class="ri-filter-3-line text-2xl"></i>
+                <p>Filter</p>
+            </div>
+        </section>
+        <section class="w-full  flex items-center justify-center flex-wrap py-6 px-7 gap-8">
             <!-- Card-->
             <div
                 class="w-[380px] h-[300px]  overflow-hidden  rounded-lg  flex justify-center items-center relative group">
