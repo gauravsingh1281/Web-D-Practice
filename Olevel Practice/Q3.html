@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Calculator using js function and switch statement</h1>
+    <label>Number 1 <input type="text" id="num1"></label><br><br>
+    <label>Number 2 <input type="text" id="num2"></label><br><br>
+    <label>Operator
+        <select id="operator">
+            <option>--- Choose operation to perform ---</option>
+            <option value="+">Addition</option>
+            <option value="-">Subtraction</option>
+            <option value="*">Multiplication</option>
+            <option value="/">Division</option>
+        </select>
+    </label><br><br>
+    <button onclick="calc()">Calculate</button>
+    <h4 id="error-message" style="display: none;">Please enter value and select valid Operator</h4>
+    <div style="display: none;">
+        <h4>Result </h4>
+        <p id="output"></p>
+    </div>
+
+    <script>
+        const add = (num1, num2) => {
+            let sum = num1 + num2;
+            return sum;
+
+        }
+        const sub = (num1, num2) => {
+            let diff = num1 - num2;
+            return diff;
+        }
+        const product = (num1, num2) => {
+            let multi = num1 * num2;
+            return multi;
+        }
+        const division = (num1, num2) => {
+            let div = num1 / num2;
+            return num2 !== 0 ? div : "'Error: Division by zero'";
+        }
+        const calc = function () {
+            let num1 = Number(document.getElementById("num1").value);
+            let num2 = Number(document.getElementById("num2").value);
+            let operator = document.getElementById("operator").value;
+            let showResult = document.getElementById("output");
+
+            if (!isNaN(num1) && !isNaN(num2) && operator) {
+                switch (operator) {
+                    case "+":
+                        showResult.innerText = `${num1} + ${num2} = ${add(num1, num2)}`;
+                        break;
+                    case "-":
+                        showResult.innerText = `${num1} - ${num2} = ${sub(num1, num2)}`;
+                        break;
+                    case "*":
+                        showResult.innerText = `${num1} * ${num2} = ${product(num1, num2)}`;
+                        break;
+                    case "/":
+                        showResult.innerText = `${num1} / ${num2} = ${division(num1, num2)}`;
+                        break;
+                    default:
+                        document.write("You entered invalid value")
+                        break;
+                }
+
+                document.querySelector("div").style = "display:block";
+                document.getElementById("error-message").style = "display:none; ";
+            } else {
+                document.getElementById("error-message").style = "display:block; color:red;";
+                document.querySelector("div").style = "display:none";
+            }
+
+
+        }
+    </script>
+</body>
+
+</html>
