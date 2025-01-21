@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Score Calculator</title>
+</head>
+
+<body>
+    <h1>Love Score Calculator</h1>
+    <label>Your Name - <input type="text" id="uName"></label><br><Br>
+    <label>Crush Name - <input type="text" id="cName"></label><br><Br>
+    <button onclick="calcScore()">Calculate Love Score</button> &nbsp;&nbsp;<button onclick="reset()">Reset</button>
+    <br><br>
+
+
+    <h2 id="result"></h2>
+
+    <script>
+        const capitalize = (str) => {
+            let capitalizedStr = str.slice(0, 1).toUpperCase() + str.slice(1);
+            return capitalizedStr;
+        }
+        const calcScore = () => {
+
+            let userName = document.getElementById("uName").value;
+            let crushName = document.getElementById("cName").value;
+            let score = Math.floor(Math.random() * 100) + 1;
+            let showResult = document.getElementById("result");
+
+            if (userName && crushName) {
+                if (score > 75) {
+                    showResult.innerText = `Love score between ${capitalize(userName)} and ${capitalize(crushName)} = ${score}%. You both are made for each other.`;
+                } else {
+                    showResult.innerText = `Love score between ${capitalize(userName)} and ${capitalize(crushName)} = ${score}%.`;
+                }
+            } else {
+                showResult.innerText = `Please enter the details first`;
+            }
+
+        }
+        const reset = () => {
+            let userName = document.getElementById("uName").value = "";
+            let crushName = document.getElementById("cName").value = "";
+            let showResult = document.getElementById("result").innerText = "";
+        }
+
+    </script>
+</body>
+
+</html>
