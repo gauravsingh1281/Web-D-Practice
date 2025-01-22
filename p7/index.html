@@ -15,11 +15,23 @@
 
 <body class="font-[mona-sans] ">
     <main class="w-full h-full">
-        <header>
-            <nav class="w-full h-20  flex justify-between items-center p-6">
-
+        <header class="mb-6">
+            <nav id="nav" class="w-full h-20  flex justify-between items-center p-6 ">
                 <div class="flex justify-center items-center gap-6">
                     <img class="w-[100px] " src="./images/Dribbble-Logo.png" alt="Dribbble-Logo">
+                    <div id="search-bar" class="w-[400px] flex justify-center items-center relative hidden ">
+                        <input
+                            class="w-full outline-none py-4 px-4 border-2 border-transparent rounded-full bg-[#f1f1f1] font-normal placeholder:text-black  hover:bg-white hover:border-[#ffdbf9]"
+                            type="text" placeholder="What are you looking for?" size="20">
+                        <div class=" absolute right-0 flex items-center justify-center gap-3 py-0 px-7  ">
+                            <div class="flex justify-center items-center font-semibold cursor-pointer">Shots <i
+                                    class="ri-arrow-drop-down-line text-2xl font-light "></i>
+                            </div>
+                            <div><i
+                                    class="ri-search-line text-xl px-2 py-2 bg-[#EA4C89] text-white rounded-full cursor-pointer"></i>
+                            </div>
+                        </div>
+                    </div>
                     <div class="flex justify-center items-center hover:text-[#565564]">
                         <a href="#" class="text-xl">Explore </a>
                         <i class="ri-arrow-drop-down-line text-2xl "></i>
@@ -45,7 +57,7 @@
                 <div class="w-1/2 flex justify-center items-center relative ">
                     <input
                         class="w-full outline-none py-4 px-4 border-2 border-transparent rounded-full bg-[#f1f1f1] font-normal placeholder:text-black  hover:bg-white hover:border-[#ffdbf9]"
-                        type="search" placeholder="What are you looking for?">
+                        type="text" placeholder="What are you looking for?">
                     <div class=" absolute right-0 flex items-center justify-center gap-3 py-0 px-7  ">
                         <div class="flex justify-center items-center font-semibold cursor-pointer">Shots <i
                                 class="ri-arrow-drop-down-line text-2xl font-light "></i>
@@ -57,7 +69,7 @@
                 </div>
 
 
-                <div class="flex justify-center items-center gap-8  ">
+                <div id="min-scroll-point" class="flex justify-center items-center gap-8  ">
                     <a href="#" class="text-[#b2aeae]">Trending searches</a>
                     <a href="#" class="bg-[#F1F1F1] py-1 px-4 rounded-full ">landing page</a>
                     <a href="#" class="bg-[#F1F1F1] py-1 px-4 rounded-full">e-commerce</a>
@@ -68,7 +80,8 @@
                 </div>
             </section>
         </header>
-        <section class="w-full h-20  flex justify-between items-center px-7 ">
+
+        <section class="w-full h-20  flex justify-between items-center px-[70px] ">
             <div class="flex justify-center items-center gap-2  border-2 py-1 px-3 rounded-lg cursor-pointer">
                 <p>Popular</p>
                 <i class="ri-arrow-drop-down-line text-2xl "></i>
@@ -88,12 +101,12 @@
                 <p>Filter</p>
             </div>
         </section>
-        <section class="w-full  flex items-center justify-center flex-wrap py-6 px-7 gap-8">
+        <section class="w-full  flex items-center justify-center flex-wrap py-6 px-[70px] gap-8">
             <!-- Card-->
             <div>
                 <div
-                    class="w-[380px] h-[300px]  overflow-hidden  rounded-lg  flex justify-center items-center relative group">
-                    <img class="w-full h-full  object-cover"
+                    class="w-[350px] h-[290px]  overflow-hidden  rounded-lg  flex justify-center items-center relative group">
+                    <img class="w-full h-full  "
                         src="https://cdn.dribbble.com/userupload/18563567/file/original-0588099b069261d6d0bee947a826308e.png?format=webp&resize=1200x900&vertical=center"
                         alt="">
                     <!-- Card bottom-->
@@ -135,14 +148,14 @@
             <!-- Card-->
             <div>
                 <div
-                    class="w-[380px] h-[300px]  overflow-hidden   rounded-lg  flex justify-center items-center relative group">
-                    <img class="w-full h-full  object-cover"
+                    class="w-[350px] h-[290px]  overflow-hidden   rounded-lg  flex justify-center items-center relative group">
+                    <img class="w-full h-full  "
                         src="https://cdn.dribbble.com/userupload/18631493/file/original-84e8117c8f2631623e804c24d3921bbb.jpg?format=webp&resize=1200x900&vertical=center"
                         alt="">
                     <!-- Card bottom-->
                     <div class="absolute h-1/4 w-full -bottom-1/4 group-hover:bottom-0 transition-all ease-in duration-300 flex justify-between items-center  px-4"
                         style="background: linear-gradient(transparent,rgb(75, 74, 74));">
-                        <h1 class="  text-white text-xl">Mobile Landing - Casino ...</h1>
+                        <h1 class="  text-white text-xl">Mobile Landing - Casino</h1>
                         <div class="flex items-center justify-center gap-5">
                             <i class="ri-bookmark-line py-2  px-3 text-xl bg-white  rounded-full"></i>
                             <i class="ri-heart-line py-2 px-3 text-xl bg-white rounded-full"></i>
@@ -177,8 +190,8 @@
             <!-- Card-->
             <div>
                 <div
-                    class="w-[380px] h-[300px]  overflow-hidden  rounded-lg flex justify-center items-center relative group">
-                    <img class="w-full h-full  object-cover"
+                    class="w-[350px] h-[290px]  overflow-hidden  rounded-lg flex justify-center items-center relative group">
+                    <img class="w-full h-full  "
                         src="https://cdn.dribbble.com/userupload/18511337/file/original-f5b78478a8a39955086142664e4c06a7.png?format=webp&resize=450x338&vertical=center"
                         alt="">
                     <!-- Card bottom-->
@@ -219,8 +232,8 @@
             <!-- Card-->
             <div>
                 <div
-                    class="w-[380px] h-[300px]  overflow-hidden   rounded-lg flex justify-center items-center relative group">
-                    <img class="w-full h-full  object-cover"
+                    class="w-[350px] h-[290px]  overflow-hidden   rounded-lg flex justify-center items-center relative group">
+                    <img class="w-full h-full "
                         src="https://cdn.dribbble.com/userupload/18618715/file/original-83e41e651ba715c23fafeb14f71b2f58.jpg?format=webp&resize=450x338&vertical=center"
                         alt="">
                     <!-- Card bottom-->
@@ -261,8 +274,8 @@
             <!-- Card-->
             <div>
                 <div
-                    class="w-[380px] h-[300px]  overflow-hidden   rounded-lg  flex justify-center items-center relative group">
-                    <img class="w-full h-full  object-cover"
+                    class="w-[350px] h-[290px]  overflow-hidden   rounded-lg  flex justify-center items-center relative group">
+                    <img class="w-full h-full  "
                         src="https://cdn.dribbble.com/userupload/18611477/file/original-e92bf9abfa003876e079b406755f637f.png?format=webp&resize=450x338&vertical=center"
                         alt="">
                     <!-- Card bottom-->
@@ -303,14 +316,14 @@
             <!-- Card-->
             <div>
                 <div
-                    class="w-[380px] h-[300px]  overflow-hidden   rounded-lg  flex justify-center items-center relative group">
-                    <img class="w-full h-full  object-cover"
+                    class="w-[350px] h-[290px]  overflow-hidden   rounded-lg  flex justify-center items-center relative group">
+                    <img class="w-full h-full "
                         src="https://cdn.dribbble.com/userupload/18621292/file/original-9631370312bad58900ce0bb9d93b0ef3.png?format=webp&resize=450x338&vertical=center"
                         alt="">
                     <!-- Card bottom-->
                     <div class="absolute h-1/4 w-full -bottom-1/4 group-hover:bottom-0 transition-all ease-in duration-300 flex justify-between items-center  px-4"
                         style="background: linear-gradient(transparent,rgb(75, 74, 74));">
-                        <h1 class="  text-white text-xl">Social Media Manag ..</h1>
+                        <h1 class="  text-white text-xl">Social Media Manag.</h1>
                         <div class="flex items-center justify-center gap-5">
                             <i class="ri-bookmark-line py-2  px-3 text-xl bg-white  rounded-full"></i>
                             <i class="ri-heart-line py-2 px-3 text-xl bg-white rounded-full"></i>
@@ -346,11 +359,10 @@
         <section class="w-full h-28  flex justify-center items-center relative">
             <button class="py-2 px-7 bg-black text-white rounded-full text-lg hover:bg-[#565564]">Sign up to
                 continue</button>
-            <div
-                class="cursor-pointer  py-3 px-4 bg-[#BDBDBD] rounded-full text-white absolute bottom-0 right-7 hover:bg-[#4D4D4D]">
+            <button onclick="goUp()" id="top-btn"
+                class="py-2 px-3 bg-[#BDBDBD] rounded-full text-white fixed bottom-6 right-3 hover:bg-[#4D4D4D] z-11 hidden">
                 <i class="ri-arrow-up-line text-2xl"></i>
-            </div>
-
+            </button>
         </section>
         <footer class="w-full p-7">
             <div class="flex justify-between items-center w-full h-32">
@@ -390,6 +402,7 @@
             </div>
         </footer>
     </main>
+    <script src="./script.js"></script>
 </body>
 
 </html>
