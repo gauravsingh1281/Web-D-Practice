@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dribbble</title>
+    <title>Dribbble - Discover the World’s Top Designers &amp; Creative Professionals</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap"
@@ -18,7 +18,7 @@
         <header class="mb-6">
             <nav id="nav" class="w-full h-20  flex justify-between items-center p-6 ">
                 <div class="flex justify-center items-center gap-6">
-                    <img class="w-[100px] " src="./images/Dribbble-Logo.png" alt="Dribbble-Logo">
+                    <img class="w-[100px] mr-6 " src="./images/Dribbble-Logo.png" alt="Dribbble-Logo">
                     <div id="search-bar" class="w-[400px] flex justify-center items-center relative hidden ">
                         <input
                             class="w-full outline-none py-4 px-4 border-2 border-transparent rounded-full bg-[#f1f1f1] font-normal placeholder:text-black  hover:bg-white hover:border-[#ffdbf9]"
@@ -32,13 +32,40 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex justify-center items-center hover:text-[#565564]">
-                        <a href="#" class="text-xl">Explore </a>
+                    <div id="explore" class="flex justify-center items-center  relative">
+                        <a href="#" class="text-xl hover:text-[#565564] ">Explore </a>
                         <i class="ri-arrow-drop-down-line text-2xl "></i>
+                        <!--Explore sub links-->
+                        <div id="explore-sublinks"
+                            class="w-[220px] p-6 border rounded-lg absolute bg-white top-14 flex items-start justify-center flex-col gap-3 top-16 -left-5 hidden transition-all ease-in duration-500">
+                            <a class="font-semibold" href="#"><i class="ri-line-chart-line"></i> Popular</a>
+                            <a class="font-semibold" href="#"><i class="ri-bard-line"></i> New and Noteworthy</a>
+                            <div class="w-full h-[1px] bg-[#e5e3e3]"></div>
+                            <div class="flex justify-center items-start flex-col gap-3">
+                                <a href="#">Product Design</a>
+                                <a href="#">Web Design</a>
+                                <a href="#">Animation</a>
+                                <a href="#">Branding</a>
+                                <a href="#">Illustration</a>
+                                <a href="#">Mobile</a>
+                                <a href="#">Typography</a>
+                                <a href="#">Print</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex justify-center items-center">
+
+                    <div id="hire-btn" class="flex justify-center items-center relative">
                         <a href="#" class="text-xl">Hire a Designer </a>
                         <i class="ri-arrow-drop-down-line text-2xl "></i>
+                        <!--Hire a Designer sub links-->
+                        <div id="hire-sublinks"
+                            class="w-[230px] p-6 border rounded-lg absolute bg-white top-14 flex items-start justify-center flex-col gap-3 top-16 -left-5 hidden transition-all ease-in duration-500">
+                            <a class="font-semibold" href="#"><i class="ri-search-line"></i> Browse Designers</a>
+                            <a class="font-semibold" href="#"><i class="ri-upload-cloud-line"></i> Submit a Project
+                                Brief</a>
+                            <a class="font-semibold" href="#"><i class="ri-file-text-line"></i> Post a Job</a>
+                            <a class="font-semibold" href="#"><i class="ri-information-line"></i> Hiring on Dribbble</a>
+                        </div>
                     </div>
                     <a href="#" class="text-xl">Find Jobs</a>
                     <a href="#" class="text-xl">Blog</a>
