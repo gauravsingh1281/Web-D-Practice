@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate no. of rows dynamically as per user input</title>
+</head>
+
+<body>
+    <h1>Student Record</h1>
+    <table border="2" cellspacing="0" cellpadding="10">
+        <tr>
+            <th>Sr. No</th>
+            <th>Student Name</th>
+            <th>Roll No.</th>
+            <th>Date of birth</th>
+            <th>Address</th>
+            <th>Father's Name</th>
+            <th>Mother's Name</th>
+            <th>Class</th>
+            <th>Course</th>
+        </tr>
+        <script>
+            let row = Number(prompt("Enter no. of student"));
+            for (let i = 1; i <= row; i++) {
+                document.write("<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>");
+            }
+        </script>
+    </table>
+</body>
+
+</html>
