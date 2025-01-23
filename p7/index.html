@@ -37,7 +37,7 @@
                         <i class="ri-arrow-drop-down-line text-2xl "></i>
                         <!--Explore sub links-->
                         <div id="explore-sublinks"
-                            class="w-[220px] p-6 border rounded-lg absolute bg-white top-14 flex items-start justify-center flex-col gap-3 top-16 -left-5 hidden transition-all ease-in duration-500">
+                            class="w-[220px] p-6 border rounded-lg absolute z-10 bg-white top-14 flex items-start justify-center flex-col gap-3 top-16 -left-5 hidden transition-all ease-in duration-500">
                             <a class="font-semibold" href="#"><i class="ri-line-chart-line"></i> Popular</a>
                             <a class="font-semibold" href="#"><i class="ri-bard-line"></i> New and Noteworthy</a>
                             <div class="w-full h-[1px] bg-[#e5e3e3]"></div>
@@ -59,7 +59,7 @@
                         <i class="ri-arrow-drop-down-line text-2xl "></i>
                         <!--Hire a Designer sub links-->
                         <div id="hire-sublinks"
-                            class="w-[230px] p-6 border rounded-lg absolute bg-white top-14 flex items-start justify-center flex-col gap-3 top-16 -left-5 hidden transition-all ease-in duration-500">
+                            class="w-[230px] p-6 border rounded-lg absolute z-10 bg-white top-14 flex items-start justify-center flex-col gap-3 top-16 -left-5 hidden transition-all ease-in duration-500">
                             <a class="font-semibold" href="#"><i class="ri-search-line"></i> Browse Designers</a>
                             <a class="font-semibold" href="#"><i class="ri-upload-cloud-line"></i> Submit a Project
                                 Brief</a>
@@ -109,9 +109,22 @@
         </header>
 
         <section class="w-full h-20  flex justify-between items-center px-[70px] ">
-            <div class="flex justify-center items-center gap-2  border-2 py-1 px-3 rounded-lg cursor-pointer">
+            <div id="category-btn"
+                class="flex justify-center items-center gap-2  border-2 py-1 px-3 rounded-lg cursor-pointer relative">
                 <p>Popular</p>
-                <i class="ri-arrow-drop-down-line text-2xl "></i>
+                <i id="arrow-icon" class="ri-arrow-drop-down-line text-2xl "></i>
+                <!--category links-->
+                <div id="category-sublinks"
+                    class="w-[172px] p-6 border rounded-lg absolute text-sm bg-white top-14 flex items-start justify-center flex-col gap-3 top-16 -left-[3px] z-10 transition-all ease-in duration-500 hidden">
+                    <a href="#" class=" w-full flex justify-between items-center">
+                        <p>Popular</p><i class="ri-check-line transition-all ease-in duration-300"></i>
+                    </a>
+                    <a href="#" class=" w-full flex justify-between items-center ">
+                        <p>New Noteworthy</p>
+                    </a>
+
+
+                </div>
             </div>
             <div class="flex justify-center items-center gap-10 hover:text-[#565564]">
                 <a href="#" class="bg-[#F1F1F1] py-1 px-4 rounded-full ">Discover</a>
@@ -123,9 +136,32 @@
                 <a href="#">Product Design</a>
                 <a href="#"><i class="ri-arrow-drop-right-line text-3xl"></i></a>
             </div>
-            <div class="flex justify-center items-center gap-3 border-2 py-1 px-4 rounded-full cursor-pointer">
+            <div id="filter-btn"
+                class="flex justify-center items-center gap-3 border-2 py-1 px-4 rounded-full cursor-pointer">
                 <i class="ri-filter-3-line text-2xl"></i>
                 <p>Filter</p>
+            </div>
+        </section>
+        <section id="filter-option" class="flex justify-center items-center w-full px-[70px] gap-8 hidden">
+            <div class=" w-[350px] flex justify-center items-start gap-3 flex-col">
+                <p>Tags</p>
+                <input type="text"
+                    class="w-full outline-none py-4 px-4 border-2 border-transparent rounded-lg bg-[#f1f1f1] font-normal   hover:bg-white hover:border-[#ffdbf9]">
+            </div>
+            <div class="w-[350px] flex justify-center items-start gap-3 flex-col">
+                <p>Color</p>
+                <input type="text"
+                    class="w-full outline-none py-4 px-4 border-2 border-transparent rounded-lg bg-[#f1f1f1] font-normal   hover:bg-white hover:border-[#ffdbf9]">
+            </div>
+            <div class=" w-[350px] flex justify-center items-start gap-3 flex-col">
+                <p>Timeframe</p>
+                <select
+                    class="w-full outline-none py-4 px-4 border-2 border-transparent rounded-lg bg-[#f1f1f1] font-normal   hover:bg-white hover:border-[#ffdbf9]">
+                    <option>Now</option>
+                    <option>Now</option>
+                    <option>Now</option>
+                    <option>Now</option>
+                </select>
             </div>
         </section>
         <section class="w-full  flex items-center justify-center flex-wrap py-6 px-[70px] gap-8">

@@ -34,6 +34,22 @@ hireBtn.addEventListener("mouseout", (e) => {
 //   showHireSublinks.classList.add("hidden");
 // });
 
+// For category btn
+let categoryBtn = document.getElementById("category-btn");
+let arrowIcon = document.getElementById("arrow-icon");
+let showCatSublinks = document.getElementById("category-sublinks");
+categoryBtn.addEventListener("click", () => {
+  showCatSublinks.classList.toggle("hidden");
+  showCatSublinks.classList.toggle("block");
+  arrowIcon.classList.toggle("rotate-180");
+});
+// for fitler btn
+let fitlerBtn = document.getElementById("filter-btn");
+let showFilterOption = document.getElementById("filter-option");
+fitlerBtn.addEventListener("click", () => {
+  showFilterOption.classList.toggle("hidden");
+  showFilterOption.classList.toggle("block");
+});
 // For fixed nav bar on scroll
 
 let nav = document.getElementById("nav");
@@ -43,11 +59,11 @@ let scrollValue = minScrollPoint.offsetTop;
 
 function navFixed() {
   if (window.scrollY > scrollValue) {
-    nav.classList.add("fixed", "bg-white", "top-0", "z-10");
+    nav.classList.add("fixed", "bg-white", "top-0", "z-20");
     searchBar.classList.remove("hidden");
   } else {
     searchBar.classList.add("hidden");
-    nav.classList.remove("fixed", "bg-white", "top-0", "z-10");
+    nav.classList.remove("fixed", "bg-white", "top-0", "z-20");
   }
 }
 
