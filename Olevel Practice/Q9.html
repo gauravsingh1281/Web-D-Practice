@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wap to check a year is leap year or not</title>
+</head>
+
+<body>
+    <script>
+        let year = Number(prompt("enter year"));
+        function leapYear(year) {
+            // 1st way
+            // if (year % 4 == 0) {
+            //     if (year % 100 !== 0) {
+            //         console.log("Leap year.");
+            //     } else {
+            //         if (year % 400 == 0) {
+            //             console.log("Leap year.");
+
+            //         } else {
+            //             console.log("Not leap year.");
+            //         }
+            //     }
+            // } else {
+            //     console.log("Not leap year.");
+            // }
+
+            // 2nd way
+            if ((year % 4 == 0 && year % 100 !== 0) || (year % 400 == 0)) {
+                console.log("Leap year.");
+            } else {
+                console.log("Not leap year.");
+            }
+        }
+        leapYear(year);
+    </script>
+</body>
+
+</html>
