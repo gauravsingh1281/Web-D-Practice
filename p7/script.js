@@ -10,14 +10,14 @@ exploreBtn.addEventListener("mouseover", (e) => {
   showExSublinks.classList.add("block");
 });
 
-exploreBtn.addEventListener("mouseout", (e) => {
-  showExSublinks.classList.remove("block");
-  showExSublinks.classList.add("hidden");
-});
-// showExSublinks.addEventListener("mouseout", (e) => {
+// exploreBtn.addEventListener("mouseout", (e) => {
 //   showExSublinks.classList.remove("block");
 //   showExSublinks.classList.add("hidden");
 // });
+showExSublinks.addEventListener("mouseout", (e) => {
+  showExSublinks.classList.remove("block");
+  showExSublinks.classList.add("hidden");
+});
 
 // for Hire btn sublinks
 
