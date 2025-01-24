@@ -20,6 +20,7 @@ exploreBtn.addEventListener("mouseout", (e) => {
 // });
 
 // for Hire btn sublinks
+
 hireBtn.addEventListener("mouseover", (e) => {
   showHireSublinks.classList.remove("hidden");
   showHireSublinks.classList.add("block");
@@ -34,6 +35,28 @@ hireBtn.addEventListener("mouseout", (e) => {
 //   showHireSublinks.classList.add("hidden");
 // });
 
+// For search box input category
+
+let searchCategory = document.getElementById("search-category");
+let searchCatIcon = document.getElementById("search-cat-icon");
+let showSearchCategory = document.getElementById("search-cat-links");
+let navSearchCategory = document.getElementById("nav-search-category");
+let navSearchCatIcon = document.getElementById("nav-search-cat-icon");
+let navShowSearchCategory = document.getElementById("nav-search-cat-links");
+
+// main search
+searchCategory.addEventListener("click", () => {
+  showSearchCategory.classList.toggle("hidden");
+  showSearchCategory.classList.toggle("block");
+  searchCatIcon.classList.toggle("rotate-180");
+});
+// nav search
+navSearchCategory.addEventListener("click", () => {
+  navShowSearchCategory.classList.toggle("hidden");
+  navShowSearchCategory.classList.toggle("block");
+  navSearchCatIcon.classList.toggle("rotate-180");
+});
+
 // For category btn
 let categoryBtn = document.getElementById("category-btn");
 let arrowIcon = document.getElementById("arrow-icon");
@@ -43,6 +66,7 @@ categoryBtn.addEventListener("click", () => {
   showCatSublinks.classList.toggle("block");
   arrowIcon.classList.toggle("rotate-180");
 });
+
 // for fitler btn
 let fitlerBtn = document.getElementById("filter-btn");
 let showFilterOption = document.getElementById("filter-option");
@@ -78,6 +102,7 @@ marqueeElement.forEach((element) => {
     stack2.style.transition = "transform 0.3s ease";
   });
 });
+
 // For fixed nav bar on scroll
 
 let nav = document.getElementById("nav");
@@ -85,7 +110,7 @@ let minScrollPoint = document.getElementById("min-scroll-point");
 let searchBar = document.getElementById("search-bar");
 let scrollValue = minScrollPoint.offsetTop;
 
-function navFixed() {
+const navFixed = () => {
   if (window.scrollY > scrollValue) {
     nav.classList.add("fixed", "bg-white", "top-0", "z-20");
     searchBar.classList.remove("hidden");
@@ -93,7 +118,7 @@ function navFixed() {
     searchBar.classList.add("hidden");
     nav.classList.remove("fixed", "bg-white", "top-0", "z-20");
   }
-}
+};
 
 // For go to top button
 let topBtn = document.getElementById("top-btn");

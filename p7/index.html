@@ -20,13 +20,28 @@
             <nav id="nav" class="w-full h-20  flex justify-between items-center p-6 ">
                 <div class="flex justify-center items-center gap-6">
                     <img class="w-[100px] mr-6 " src="./images/Dribbble-Logo.png" alt="Dribbble-Logo">
-                    <div id="search-bar" class="w-[400px] flex justify-center items-center relative hidden ">
+                    <!-- Nav Search bar  -->
+                    <div id="search-bar"
+                        class="w-[400px] flex justify-between items-center relative py-4 px-4 border-2 rounded-full bg-[#f1f1f1] group hover:bg-white hover:border-[#ffdbf9] cursor-pointer hidden">
                         <input
-                            class="w-full outline-none py-4 px-4 border-2 border-transparent rounded-full bg-[#f1f1f1] font-normal placeholder:text-black  hover:bg-white hover:border-[#ffdbf9]"
-                            type="text" placeholder="What are you looking for?" size="20">
+                            class="w-[65%] outline-none bg-[#f1f1f1] group-hover:bg-white border-transparent font-normal placeholder:text-black  "
+                            type="text" placeholder="What are you looking for?">
                         <div class=" absolute right-0 flex items-center justify-center gap-3 py-0 px-7  ">
-                            <div class="flex justify-center items-center font-semibold cursor-pointer">Shots <i
+                            <div id="nav-search-category"
+                                class="flex justify-center items-center font-semibold cursor-pointer hover:text-[#565564]">
+                                Shots <i id="nav-search-cat-icon"
                                     class="ri-arrow-drop-down-line text-2xl font-light "></i>
+                                <!-- Nav Search category links -->
+                                <div id="nav-search-cat-links"
+                                    class="w-[150px] p-3 border rounded-lg absolute text-sm bg-white  flex items-start justify-center flex-col gap-2 top-16 left-0 z-10 transition-all ease-in duration-500 hidden ">
+                                    <a href="#"
+                                        class="w-full text-base font-semibold py-1 px-3 hover:bg-[#f1f1f1] rounded-md">Shorts
+                                    </a>
+                                    <a href="#"
+                                        class="w-full  text-base font-light py-1 px-3 hover:bg-[#f1f1f1] rounded-md">Designers
+                                    </a>
+                                </div>
+
                             </div>
                             <div><i
                                     class="ri-search-line text-xl px-2 py-2 bg-[#EA4C89] text-white rounded-full cursor-pointer"></i>
@@ -55,7 +70,7 @@
                         </div>
                     </div>
 
-                    <div id="hire-btn" class="flex justify-center items-center relative">
+                    <div id="hire-btn" class="flex justify-center items-center relative hover:text-[#565564]">
                         <a href="#" class="text-xl">Hire a Designer </a>
                         <i class="ri-arrow-drop-down-line text-2xl "></i>
                         <!--Hire a Designer sub links-->
@@ -68,8 +83,8 @@
                             <a class="font-semibold" href="#"><i class="ri-information-line"></i> Hiring on Dribbble</a>
                         </div>
                     </div>
-                    <a href="#" class="text-xl">Find Jobs</a>
-                    <a href="#" class="text-xl">Blog</a>
+                    <a href="#" class="text-xl hover:text-[#565564]">Find Jobs</a>
+                    <a href="#" class="text-xl hover:text-[#565564]">Blog</a>
                 </div>
                 <div class="flex justify-center items-center gap-6 text-xl">
                     <button class="hover:text-[#565564]">Sign Up</button>
@@ -82,13 +97,27 @@
                 <p class="text-xl text-center font-light">Explore work from the most talented and accomplished
                     designers<br> ready to take on your next
                     project</p>
-                <div class="w-1/2 flex justify-center items-center relative ">
+                <!-- Search bar  -->
+                <div
+                    class="w-1/2 flex justify-between items-center relative py-4 px-4 border-2 rounded-full bg-[#f1f1f1] group hover:bg-white hover:border-[#ffdbf9] cursor-pointer">
                     <input
-                        class="w-full outline-none py-4 px-4 border-2 border-transparent rounded-full bg-[#f1f1f1] font-normal placeholder:text-black  hover:bg-white hover:border-[#ffdbf9]"
+                        class="w-3/4 outline-none bg-[#f1f1f1] group-hover:bg-white border-transparent font-normal placeholder:text-black  "
                         type="text" placeholder="What are you looking for?">
                     <div class=" absolute right-0 flex items-center justify-center gap-3 py-0 px-7  ">
-                        <div class="flex justify-center items-center font-semibold cursor-pointer">Shots <i
-                                class="ri-arrow-drop-down-line text-2xl font-light "></i>
+                        <div id="search-category"
+                            class="flex justify-center items-center font-semibold cursor-pointer hover:text-[#565564]">
+                            Shots <i id="search-cat-icon" class="ri-arrow-drop-down-line text-2xl font-light "></i>
+                            <!-- Search category links -->
+                            <div id="search-cat-links"
+                                class="w-[150px] p-3 border rounded-lg absolute text-sm bg-white  flex items-start justify-center flex-col gap-2 top-16 left-0 z-10 transition-all ease-in duration-500 hidden ">
+                                <a href="#"
+                                    class="w-full text-base font-semibold py-1 px-3 hover:bg-[#f1f1f1] rounded-md">Shorts
+                                </a>
+                                <a href="#"
+                                    class="w-full  text-base font-light py-1 px-3 hover:bg-[#f1f1f1] rounded-md">Designers
+                                </a>
+                            </div>
+
                         </div>
                         <div><i
                                 class="ri-search-line text-xl px-2 py-2 bg-[#EA4C89] text-white rounded-full cursor-pointer"></i>
@@ -99,12 +128,12 @@
 
                 <div id="min-scroll-point" class="flex justify-center items-center gap-8  ">
                     <a href="#" class="text-[#b2aeae]">Trending searches</a>
-                    <a href="#" class="bg-[#F1F1F1] py-1 px-4 rounded-full ">landing page</a>
-                    <a href="#" class="bg-[#F1F1F1] py-1 px-4 rounded-full">e-commerce</a>
-                    <a href="#" class="bg-[#F1F1F1] py-1 px-4 rounded-full">mobile app</a>
-                    <a href="#" class="bg-[#F1F1F1] py-1 px-4 rounded-full">logo design</a>
-                    <a href="#" class="bg-[#F1F1F1] py-1 px-4 rounded-full">dashboard</a>
-                    <a href="#" class="bg-[#F1F1F1] py-1 px-4 rounded-full">icons</a>
+                    <a href="#" class="bg-[#F1F1F1] py-1 px-4 rounded-full hover:bg-[#FAF9FB]">landing page</a>
+                    <a href="#" class="bg-[#F1F1F1] py-1 px-4 rounded-full hover:bg-[#FAF9FB]">e-commerce</a>
+                    <a href="#" class="bg-[#F1F1F1] py-1 px-4 rounded-full hover:bg-[#FAF9FB]">mobile app</a>
+                    <a href="#" class="bg-[#F1F1F1] py-1 px-4 rounded-full hover:bg-[#FAF9FB]">logo design</a>
+                    <a href="#" class="bg-[#F1F1F1] py-1 px-4 rounded-full hover:bg-[#FAF9FB]">dashboard</a>
+                    <a href="#" class="bg-[#F1F1F1] py-1 px-4 rounded-full hover:bg-[#FAF9FB]">icons</a>
                 </div>
             </section>
         </header>
@@ -116,11 +145,13 @@
                 <i id="arrow-icon" class="ri-arrow-drop-down-line text-2xl "></i>
                 <!--category links-->
                 <div id="category-sublinks"
-                    class="w-[172px] p-6 border rounded-lg absolute text-sm bg-white top-14 flex items-start justify-center flex-col gap-3 top-16 -left-[3px] z-10 transition-all ease-in duration-500 hidden">
-                    <a href="#" class=" w-full flex justify-between items-center">
+                    class="w-[172px] p-4 border rounded-lg absolute text-sm bg-white flex items-start justify-center flex-col gap-3 top-16 -left-[3px] z-10 transition-all ease-in duration-500 hidden">
+                    <a href="#"
+                        class=" w-full flex justify-between items-center py-2 px-3 hover:bg-[#f1f1f1] rounded-md">
                         <p>Popular</p><i class="ri-check-line transition-all ease-in duration-300"></i>
                     </a>
-                    <a href="#" class=" w-full flex justify-between items-center ">
+                    <a href="#"
+                        class=" w-full flex justify-between items-center py-2 px-3 hover:bg-[#f1f1f1] rounded-md ">
                         <p>New Noteworthy</p>
                     </a>
 
@@ -146,23 +177,36 @@
         <section id="filter-option" class="flex justify-center items-center w-full px-[70px] gap-8 hidden">
             <div class=" w-[350px] flex justify-center items-start gap-3 flex-col">
                 <p>Tags</p>
-                <input type="text"
-                    class="w-full outline-none py-4 px-4 border-2 border-transparent rounded-lg bg-[#f1f1f1] font-normal   hover:bg-white hover:border-[#ffdbf9]">
+                <div
+                    class="w-full flex justify-center items-center gap-5 py-4 px-4 border-2 border-[#f1f1f1] rounded-lg bg-white font-normal  hover:border-[#ffdbf9]">
+                    <i class="ri-search-line"></i>
+                    <input type="text" class="w-full outline-none ">
+                </div>
+
             </div>
             <div class="w-[350px] flex justify-center items-start gap-3 flex-col">
                 <p>Color</p>
-                <input type="text"
-                    class="w-full outline-none py-4 px-4 border-2 border-transparent rounded-lg bg-[#f1f1f1] font-normal   hover:bg-white hover:border-[#ffdbf9]">
+                <div
+                    class="flex justify-between items-center w-full border-2 border-[#f1f1f1] py-4 px-4  hover:border-[#ffdbf9] outline-none  rounded-lg">
+                    <div class="flex justify-center items-center gap-2"><i class="ri-palette-line"></i>Select
+                        Color
+                    </div>
+                    <input type="color" class=" bg-white font-normal   ">
+                </div>
+
             </div>
             <div class=" w-[350px] flex justify-center items-start gap-3 flex-col">
                 <p>Timeframe</p>
-                <select
-                    class="w-full outline-none py-4 px-4 border-2 border-transparent rounded-lg bg-[#f1f1f1] font-normal   hover:bg-white hover:border-[#ffdbf9]">
-                    <option>Now</option>
-                    <option>Now</option>
-                    <option>Now</option>
-                    <option>Now</option>
-                </select>
+                <div class="w-full py-4 px-4 border-2 border-[#f1f1f1] rounded-lg bg-white hover:border-[#ffdbf9]">
+                    <select class="w-full outline-none  font-normal   ">
+                        <option>Now <i class="ri-check-line text-black"></i></option>
+                        <option>This Past Week</option>
+                        <option>This Past Month</option>
+                        <option>This Past Year</option>
+                        <option>All Time</option>
+                    </select>
+                </div>
+
             </div>
         </section>
         <section class="w-full  flex items-center justify-center flex-wrap py-6 px-[70px] gap-8">
