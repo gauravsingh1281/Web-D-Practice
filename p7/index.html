@@ -11,6 +11,7 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="font-[mona-sans] ">
@@ -419,13 +420,292 @@
                 </div>
             </div>
         </section>
-        <section class="w-full h-28  flex justify-center items-center relative">
+        <section class="w-full h-32  flex justify-center items-center relative">
             <button class="py-2 px-7 bg-black text-white rounded-full text-lg hover:bg-[#565564]">Sign up to
                 continue</button>
             <button onclick="goUp()" id="top-btn"
-                class="py-2 px-3 bg-[#BDBDBD] rounded-full text-white fixed bottom-6 right-3 hover:bg-[#4D4D4D] z-11 hidden">
+                class="py-2 px-3 bg-[#BDBDBD] rounded-full text-white fixed bottom-6 right-3 hover:bg-[#4D4D4D] z-60 hidden">
                 <i class="ri-arrow-up-line text-2xl"></i>
             </button>
+        </section>
+        <!-- marquee animation  -->
+        <section id="marquee-container"
+            class="w-full h-[220px] relative overflow-hidden flex items-center justify-center ">
+            <div id="marquee-content"
+                class="w-full h-full  absolute grid grid-rows-1 grid-flow-col gap-10 cursor-pointer ">
+                <a href="#">
+                    <div class=" w-[200px] h-full flex justify-center items-start flex-col marquee-element gap-3 ">
+
+                        <div class="w-full relative">
+                            <img src="https://cdn.dribbble.com/userupload/17052020/file/original-9eef05e33b21517f04f5151143f4539b.jpg?crop=0x0-5000x3750&format=webp&resize=320x240&vertical=center"
+                                class="w-full rounded-lg border-white border-[2px]  ">
+                            <div
+                                class="stack1 w-full h-full rounded-lg  border-[2px] absolute -top-[6px] -right-[6px] bg-[#b9f5a5]">
+                            </div>
+                            <div
+                                class=" stack2 w-full h-full rounded-lg absolute -top-[12px] -right-[12px] border-[2px] bg-[#f0bfe0]">
+                            </div>
+                        </div>
+
+                        <p>Print</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class=" w-[200px] h-full flex justify-center items-start flex-col marquee-element gap-3 ">
+
+                        <div class="w-full relative">
+                            <img src="https://cdn.dribbble.com/userupload/17246273/file/original-c32d0fc186bb93be415ef8dc48baa62e.png?format=webp&resize=320x240&vertical=center"
+                                class="w-full rounded-lg border-white border-[2px]  ">
+                            <div
+                                class="stack1 w-full h-full rounded-lg  border-[2px] absolute -top-[6px] -right-[6px] bg-[#b9f5a5]">
+                            </div>
+                            <div
+                                class=" stack2 w-full h-full rounded-lg absolute -top-[12px] -right-[12px] border-[2px] bg-[#f0bfe0]">
+                            </div>
+                        </div>
+
+                        <p>Web Design</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class=" w-[200px] h-full flex justify-center items-start flex-col marquee-element gap-3 ">
+
+                        <div class="w-full relative">
+                            <img src="https://cdn.dribbble.com/userupload/17191934/file/still-76724cd340a87bc6fdbc9b7b406bce18.png?format=webp&resize=320x240&vertical=center"
+                                class="w-full rounded-lg border-white border-[2px]  ">
+                            <div
+                                class="stack1 w-full h-full rounded-lg  border-[2px] absolute -top-[6px] -right-[6px] bg-[#b9f5a5]">
+                            </div>
+                            <div
+                                class=" stack2 w-full h-full rounded-lg absolute -top-[12px] -right-[12px] border-[2px] bg-[#f0bfe0]">
+                            </div>
+                        </div>
+
+                        <p>Typography</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class=" w-[200px] h-full flex justify-center items-start flex-col marquee-element gap-3 ">
+
+                        <div class="w-full relative">
+                            <img src="https://cdn.dribbble.com/userupload/17112464/file/original-a9d5a1b369d4a3fb1a2387a6123ccffd.png?format=webp&resize=320x240&vertical=center"
+                                class="w-full rounded-lg border-white border-[2px]  ">
+                            <div
+                                class="stack1 w-full h-full rounded-lg  border-[2px] absolute -top-[6px] -right-[6px] bg-[#b9f5a5]">
+                            </div>
+                            <div
+                                class=" stack2 w-full h-full rounded-lg absolute -top-[12px] -right-[12px] border-[2px] bg-[#f0bfe0]">
+                            </div>
+                        </div>
+
+                        <p>Mobile</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class=" w-[200px] h-full flex justify-center items-start flex-col marquee-element gap-3 ">
+
+                        <div class="w-full relative">
+                            <img src="https://cdn.dribbble.com/userupload/17182960/file/original-5d5497d4d97b97553c13d234ed89e2f6.png?format=webp&resize=320x240&vertical=center"
+                                class="w-full rounded-lg border-white border-[2px]  ">
+                            <div
+                                class="stack1 w-full h-full rounded-lg  border-[2px] absolute -top-[6px] -right-[6px] bg-[#b9f5a5]">
+                            </div>
+                            <div
+                                class=" stack2 w-full h-full rounded-lg absolute -top-[12px] -right-[12px] border-[2px] bg-[#f0bfe0]">
+                            </div>
+                        </div>
+
+                        <p>Illustration</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class=" w-[200px] h-full flex justify-center items-start flex-col marquee-element gap-3 ">
+
+                        <div class="w-full relative">
+                            <img src="https://cdn.dribbble.com/userupload/17059756/file/original-cabc1f3c118a87e424bc97a8bc5f5266.jpg?crop=215x0-2542x1745&format=webp&resize=320x240&vertical=center"
+                                class="w-full rounded-lg border-white border-[2px]  ">
+                            <div
+                                class="stack1 w-full h-full rounded-lg  border-[2px] absolute -top-[6px] -right-[6px] bg-[#b9f5a5]">
+                            </div>
+                            <div
+                                class=" stack2 w-full h-full rounded-lg absolute -top-[12px] -right-[12px] border-[2px] bg-[#f0bfe0]">
+                            </div>
+                        </div>
+
+                        <p>Branding</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class=" w-[200px] h-full flex justify-center items-start flex-col marquee-element gap-3 ">
+
+                        <div class="w-full relative">
+                            <img src="https://cdn.dribbble.com/userupload/17388038/file/still-d167229decc1b12695c9988cdbde62b1.png?format=webp&resize=320x240&vertical=center"
+                                class="w-full rounded-lg border-white border-[2px]  ">
+                            <div
+                                class="stack1 w-full h-full rounded-lg  border-[2px] absolute -top-[6px] -right-[6px] bg-[#b9f5a5]">
+                            </div>
+                            <div
+                                class=" stack2 w-full h-full rounded-lg absolute -top-[12px] -right-[12px] border-[2px] bg-[#f0bfe0]">
+                            </div>
+                        </div>
+
+                        <p>Animation</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class=" w-[200px] h-full flex justify-center items-start flex-col marquee-element gap-3 ">
+
+                        <div class="w-full relative">
+                            <img src="https://cdn.dribbble.com/userupload/17266793/file/original-acdb6337f839133eacd2a3a3b7bb85a8.png?format=webp&resize=320x240&vertical=center"
+                                class="w-full rounded-lg border-white border-[2px]  ">
+                            <div
+                                class="stack1 w-full h-full rounded-lg  border-[2px] absolute -top-[6px] -right-[6px] bg-[#b9f5a5]">
+                            </div>
+                            <div
+                                class=" stack2 w-full h-full rounded-lg absolute -top-[12px] -right-[12px] border-[2px] bg-[#f0bfe0]">
+                            </div>
+                        </div>
+
+                        <p>Product Design</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class=" w-[200px] h-full flex justify-center items-start flex-col marquee-element gap-3 ">
+
+                        <div class="w-full relative">
+                            <img src="https://cdn.dribbble.com/userupload/17052020/file/original-9eef05e33b21517f04f5151143f4539b.jpg?crop=0x0-5000x3750&format=webp&resize=320x240&vertical=center"
+                                class="w-full rounded-lg border-white border-[2px]  ">
+                            <div
+                                class="stack1 w-full h-full rounded-lg  border-[2px] absolute -top-[6px] -right-[6px] bg-[#b9f5a5]">
+                            </div>
+                            <div
+                                class=" stack2 w-full h-full rounded-lg absolute -top-[12px] -right-[12px] border-[2px] bg-[#f0bfe0]">
+                            </div>
+                        </div>
+
+                        <p>Print</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class=" w-[200px] h-full flex justify-center items-start flex-col marquee-element gap-3 ">
+
+                        <div class="w-full relative">
+                            <img src="https://cdn.dribbble.com/userupload/17246273/file/original-c32d0fc186bb93be415ef8dc48baa62e.png?format=webp&resize=320x240&vertical=center"
+                                class="w-full rounded-lg border-white border-[2px]  ">
+                            <div
+                                class="stack1 w-full h-full rounded-lg  border-[2px] absolute -top-[6px] -right-[6px] bg-[#b9f5a5]">
+                            </div>
+                            <div
+                                class=" stack2 w-full h-full rounded-lg absolute -top-[12px] -right-[12px] border-[2px] bg-[#f0bfe0]">
+                            </div>
+                        </div>
+
+                        <p>Web Design</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class=" w-[200px] h-full flex justify-center items-start flex-col marquee-element gap-3 ">
+
+                        <div class="w-full relative">
+                            <img src="https://cdn.dribbble.com/userupload/17191934/file/still-76724cd340a87bc6fdbc9b7b406bce18.png?format=webp&resize=320x240&vertical=center"
+                                class="w-full rounded-lg border-white border-[2px]  ">
+                            <div
+                                class="stack1 w-full h-full rounded-lg  border-[2px] absolute -top-[6px] -right-[6px] bg-[#b9f5a5]">
+                            </div>
+                            <div
+                                class=" stack2 w-full h-full rounded-lg absolute -top-[12px] -right-[12px] border-[2px] bg-[#f0bfe0]">
+                            </div>
+                        </div>
+
+                        <p>Typography</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class=" w-[200px] h-full flex justify-center items-start flex-col marquee-element gap-3 ">
+
+                        <div class="w-full relative">
+                            <img src="https://cdn.dribbble.com/userupload/17112464/file/original-a9d5a1b369d4a3fb1a2387a6123ccffd.png?format=webp&resize=320x240&vertical=center"
+                                class="w-full rounded-lg border-white border-[2px]  ">
+                            <div
+                                class="stack1 w-full h-full rounded-lg  border-[2px] absolute -top-[6px] -right-[6px] bg-[#b9f5a5]">
+                            </div>
+                            <div
+                                class=" stack2 w-full h-full rounded-lg absolute -top-[12px] -right-[12px] border-[2px] bg-[#f0bfe0]">
+                            </div>
+                        </div>
+
+                        <p>Mobile</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class=" w-[200px] h-full flex justify-center items-start flex-col marquee-element gap-3 ">
+
+                        <div class="w-full relative">
+                            <img src="https://cdn.dribbble.com/userupload/17182960/file/original-5d5497d4d97b97553c13d234ed89e2f6.png?format=webp&resize=320x240&vertical=center"
+                                class="w-full rounded-lg border-white border-[2px]  ">
+                            <div
+                                class="stack1 w-full h-full rounded-lg  border-[2px] absolute -top-[6px] -right-[6px] bg-[#b9f5a5]">
+                            </div>
+                            <div
+                                class=" stack2 w-full h-full rounded-lg absolute -top-[12px] -right-[12px] border-[2px] bg-[#f0bfe0]">
+                            </div>
+                        </div>
+
+                        <p>Illustration</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class=" w-[200px] h-full flex justify-center items-start flex-col marquee-element gap-3 ">
+
+                        <div class="w-full relative">
+                            <img src="https://cdn.dribbble.com/userupload/17059756/file/original-cabc1f3c118a87e424bc97a8bc5f5266.jpg?crop=215x0-2542x1745&format=webp&resize=320x240&vertical=center"
+                                class="w-full rounded-lg border-white border-[2px]  ">
+                            <div
+                                class="stack1 w-full h-full rounded-lg  border-[2px] absolute -top-[6px] -right-[6px] bg-[#b9f5a5]">
+                            </div>
+                            <div
+                                class=" stack2 w-full h-full rounded-lg absolute -top-[12px] -right-[12px] border-[2px] bg-[#f0bfe0]">
+                            </div>
+                        </div>
+
+                        <p>Branding</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class=" w-[200px] h-full flex justify-center items-start flex-col marquee-element gap-3 ">
+
+                        <div class="w-full relative">
+                            <img src="https://cdn.dribbble.com/userupload/17388038/file/still-d167229decc1b12695c9988cdbde62b1.png?format=webp&resize=320x240&vertical=center"
+                                class="w-full rounded-lg border-white border-[2px]  ">
+                            <div
+                                class="stack1 w-full h-full rounded-lg  border-[2px] absolute -top-[6px] -right-[6px] bg-[#b9f5a5]">
+                            </div>
+                            <div
+                                class=" stack2 w-full h-full rounded-lg absolute -top-[12px] -right-[12px] border-[2px] bg-[#f0bfe0]">
+                            </div>
+                        </div>
+
+                        <p>Animation</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class=" w-[200px] h-full flex justify-center items-start flex-col marquee-element gap-3 ">
+
+                        <div class="w-full relative">
+                            <img src="https://cdn.dribbble.com/userupload/17266793/file/original-acdb6337f839133eacd2a3a3b7bb85a8.png?format=webp&resize=320x240&vertical=center"
+                                class="w-full rounded-lg border-white border-[2px]  ">
+                            <div
+                                class="stack1 w-full h-full rounded-lg  border-[2px] absolute -top-[6px] -right-[6px] bg-[#b9f5a5]">
+                            </div>
+                            <div
+                                class=" stack2 w-full h-full rounded-lg absolute -top-[12px] -right-[12px] border-[2px] bg-[#f0bfe0]">
+                            </div>
+                        </div>
+
+                        <p>Product Design</p>
+                    </div>
+                </a>
+            </div>
         </section>
         <footer class="w-full p-7">
             <div class="flex justify-between items-center w-full h-32">

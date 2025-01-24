@@ -50,6 +50,34 @@ fitlerBtn.addEventListener("click", () => {
   showFilterOption.classList.toggle("hidden");
   showFilterOption.classList.toggle("block");
 });
+
+// For marquee element hover effect
+
+let marqueeElement = document.querySelectorAll(".marquee-element");
+let marqueeContent = document.getElementById("marquee-content");
+
+marqueeElement.forEach((element) => {
+  let stack1 = element.querySelector(".stack1");
+  let stack2 = element.querySelector(".stack2");
+  // Pause animation
+  element.addEventListener("mouseover", () => {
+    marqueeContent.style.animationPlayState = "paused";
+    // for hover effect on element
+    stack1.style = "transform:scale(1.02); opacity:1";
+    stack1.style.transition = "transform 0.3s ease";
+    stack2.style = "transform:scale(1.02); opacity:1";
+    stack2.style.transition = "transform 0.3s ease";
+  });
+  // play animation
+  element.addEventListener("mouseout", () => {
+    marqueeContent.style.animationPlayState = "running";
+    // for reset hover effect on element
+    stack1.style = "transform:scale(1); opacity:0.5";
+    stack1.style.transition = "transform 0.3s ease";
+    stack2.style = "transform:scale(1); opacity:0.5";
+    stack2.style.transition = "transform 0.3s ease";
+  });
+});
 // For fixed nav bar on scroll
 
 let nav = document.getElementById("nav");
