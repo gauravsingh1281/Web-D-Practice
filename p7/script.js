@@ -8,12 +8,9 @@ let showHireSublinks = document.getElementById("hire-sublinks");
 exploreBtn.addEventListener("mouseover", (e) => {
   showExSublinks.classList.remove("hidden");
   showExSublinks.classList.add("block");
+  showHireSublinks.classList.add("hidden");
 });
 
-// exploreBtn.addEventListener("mouseout", (e) => {
-//   showExSublinks.classList.remove("block");
-//   showExSublinks.classList.add("hidden");
-// });
 showExSublinks.addEventListener("mouseout", (e) => {
   showExSublinks.classList.remove("block");
   showExSublinks.classList.add("hidden");
@@ -24,16 +21,13 @@ showExSublinks.addEventListener("mouseout", (e) => {
 hireBtn.addEventListener("mouseover", (e) => {
   showHireSublinks.classList.remove("hidden");
   showHireSublinks.classList.add("block");
+  showExSublinks.classList.add("hidden");
 });
 
-hireBtn.addEventListener("mouseout", (e) => {
+showHireSublinks.addEventListener("mouseout", (e) => {
   showHireSublinks.classList.remove("block");
   showHireSublinks.classList.add("hidden");
 });
-// showHireSublinks.addEventListener("mouseout", (e) => {
-//   showHireSublinks.classList.remove("block");
-//   showHireSublinks.classList.add("hidden");
-// });
 
 // For search box input category
 
