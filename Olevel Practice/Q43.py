@@ -10,4 +10,4 @@ for i in range(studentSize):
 
 for j in record:
     if record[j] > 50:
-        print(j)
+        print(f"Roll no. {j} with Percentage = {record[j]}")
