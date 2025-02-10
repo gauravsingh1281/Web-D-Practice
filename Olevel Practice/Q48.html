@@ -128,6 +128,35 @@
         .box:hover .overlay {
             top: 50%;
         }
+
+        #blinking-effect {
+            width: 70%;
+            margin: auto;
+            background-color: yellow;
+            padding: 30px;
+        }
+
+        #blinking-effect p {
+            font-size: 30px;
+            color: red;
+            animation: blink;
+            animation-duration: 1s;
+            animation-iteration-count: infinite
+        }
+
+        @keyframes blink {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
     </style>
 </head>
 
@@ -158,6 +187,9 @@
             <div class="overlay">
                 <H2>Hello World</H2>
             </div>
+        </div>
+        <div id="blinking-effect">
+            <p>Hello World welcome to the world websites</p>
         </div>
     </main>
 </body>
