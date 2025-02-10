@@ -19,3 +19,9 @@ y = int(input("Enter y"))
 print(f"Value of x {x} and y {y} before swaping")
 x, y = y, x
 print(f"Value of x {x} and y {y} after swaping")
+
+# 4 Wap to generate a random no.
+import random
+
+randomNo = random.randint(0, 9)
+print(randomNo)
