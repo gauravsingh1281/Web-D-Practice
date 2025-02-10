@@ -12,3 +12,10 @@ temp = x
 x = y
 y = temp
 print(f"Value of x {x} and y {y} after swaping")
+
+# 3 Wap to swap two variables values without using temporary variables.
+x = int(input("Enter x"))
+y = int(input("Enter y"))
+print(f"Value of x {x} and y {y} before swaping")
+x, y = y, x
+print(f"Value of x {x} and y {y} after swaping")
