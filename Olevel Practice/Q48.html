@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .root {
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            flex-direction: column;
+            width: 80%;
+            margin: auto;
+
+
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        input[type="checkbox"] {
+            visibility: hidden;
+        }
+
+        .main {
+            position: relative;
+            padding: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        .checkbox-container {
+            width: 32px;
+            height: 30px;
+            background-color: transparent;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: -40px;
+            border: 2px solid black;
+        }
+
+        .checkbox-container::after {
+            content: "";
+            display: none;
+            width: 16px;
+            height: 7px;
+            background-color: transparent;
+            position: absolute;
+            left: 3px;
+            top: 3px;
+            border: solid black;
+            border-width: 0 0 3px 3px;
+            transform: rotate(-45deg);
+
+        }
+
+        .checkbox-container:hover {
+            background-color: yellow;
+        }
+
+        input:active~.checkbox-container {
+            background-color: red;
+        }
+
+        input:checked~.checkbox-container {
+            background-color: green;
+        }
+
+        input:checked~.checkbox-container::after {
+            display: block;
+        }
+
+        .box {
+            width: 400px;
+            height: 300px;
+            position: relative;
+            overflow: hidden;
+            transition: all ease-in;
+        }
+
+        .box img {
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+
+        .overlay {
+            height: 50%;
+            width: 100%;
+            background-color: rgb(224, 55, 55);
+            position: absolute;
+            top: 125%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            opacity: 0.5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .overlay h2 {
+            font-size: 50px;
+        }
+
+        .box:hover .overlay {
+            top: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="root">
+            <h1>Best Computer Science Platform</h1>
+
+            <label class="main">CodeX
+                <input type="checkbox">
+                <span class="checkbox-container"></span>
+            </label>
+
+            <label class="main">GeeksforGeeks
+                <input type="checkbox" checked="checked">
+                <span class="checkbox-container"></span>
+            </label>
+
+            <label class="main">CodeY
+                <input type="checkbox">
+                <span class="checkbox-container"></span>
+            </label>
+        </div>
+
+        <div class="box">
+            <img src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0dXJlfGVufDB8fDB8fHww"
+                alt="">
+            <div class="overlay">
+                <H2>Hello World</H2>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
