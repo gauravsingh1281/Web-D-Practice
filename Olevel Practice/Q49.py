@@ -25,3 +25,29 @@ import random
 
 randomNo = random.randint(0, 9)
 print(randomNo)
+
+# 5 WAP to find the greatest number between three numbers
+a = int(input("Enter the 1st number: "))
+b = int(input("Enter the 2nd number: "))
+c = int(input("Enter the 3rd number: "))
+
+if a > b and a > c:
+    print("a is greater")
+elif b > c:
+    print("b is greater")
+else:
+    print("c is greater")
+# 6 WAP to find the greatest number between 4 numbers
+a = int(input("Enter the 1st number: "))
+b = int(input("Enter the 2nd number: "))
+c = int(input("Enter the 3rd number: "))
+d = int(input("Enter the 4th number: "))
+
+if a > b and a > c and a > d:
+    print("a is greater")
+elif b > c and b > d:
+    print("b is greater")
+elif c > d:
+    print("c is greater")
+else:
+    print("d is greater")
