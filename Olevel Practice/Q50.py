@@ -23,3 +23,18 @@ while i <= N:
         factorSum += i
     i += 1
 print(f"Sum of factors of {N} = {factorSum}")
+
+
+# 4 Fibonacci Series
+n = int(input("enter no."))
+series = []
+if n == 1:
+    series = [0]
+elif n == 2:
+    series = [0, 1]
+else:
+    series = [0, 1]
+    for i in range(2, n + 1):
+        series.append(series[-2] + series[-1])
+for j in series:
+    print(j)
