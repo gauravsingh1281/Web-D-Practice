@@ -68,7 +68,7 @@ main {
   flex-basis: 50%;
   display: grid;
   gap: 8px;
-  grid-auto-rows: 120px;
+  grid-auto-rows: 135px;
   grid-template-columns: repeat(3, 1fr);
 }
 .gallary-img-box {
