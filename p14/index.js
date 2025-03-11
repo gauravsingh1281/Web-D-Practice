@@ -15,7 +15,7 @@ app.get("/", async (req, res) => {
   res.render("index.ejs");
 });
 
-app.post("/", async (req, res) => {
+app.post("/getSunInfo", async (req, res) => {
   const latitude = req.body.lat;
   const longitude = req.body.lng;
   const date = new Date(`${req.body.date}T00:00:00.000Z`);
@@ -40,7 +40,7 @@ app.post("/", async (req, res) => {
       const istTime = UtcTime.toLocaleString("en-IN", dateTimeOptions);
       return istTime;
     }
-    res.render("index.ejs", {
+    res.render("sunInfo.ejs", {
       sunrise: indianTimeZoneCon(sunInfo.sunrise),
       sunset: indianTimeZoneCon(sunInfo.sunset),
     });
