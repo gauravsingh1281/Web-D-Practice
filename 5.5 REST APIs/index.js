@@ -6,12 +6,6 @@ const app = express();
 const port = 3000;
 const API_URL = "https://secrets-api.appbrewery.com";
 
-// HINTs: Use the axios documentation as well as the video lesson to help you.
-// https://axios-http.com/docs/post_example
-// Use the Secrets API documentation to figure out what each route expects and how to work with it.
-// https://secrets-api.appbrewery.com/
-
-//TODO 1: Add your own bearer token from the previous lesson.
 const yourBearerToken = "d7244f2d-9195-4b45-8987-9caa99097373";
 const config = {
   headers: { Authorization: `Bearer ${yourBearerToken}` },
@@ -54,7 +48,23 @@ app.post("/post-secret", async (req, res) => {
 
 app.post("/put-secret", async (req, res) => {
   const searchId = req.body.id;
-  // TODO 3: Use axios to PUT the data from req.body to the secrets api servers.
+  const SECRET = req.body.secret;
+  const SCORE = req.body.score;
+  try {
+    const result = await axios.put(
+      API_URL + "/secrets/" + searchId,
+      {
+        secret: SECRET,
+        score: SCORE,
+      },
+      config
+    );
+    res.render("index.ejs", { content: JSON.stringify(result.data) });
+  } catch (error) {
+    res.render("index.ejs", {
+      content: JSON.stringify(error.response.data),
+    });
+  }
 });
 
 app.post("/patch-secret", async (req, res) => {
