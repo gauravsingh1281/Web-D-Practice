@@ -602,6 +602,7 @@ app.get("/filter", (req, res) => {
   res.json(foundtype);
 });
 
+//4. POST a new joke
 app.post("/jokes", (req, res) => {
   const newJoke = {
     id: jokes.length + 1,
@@ -611,9 +612,8 @@ app.post("/jokes", (req, res) => {
 
   jokes.push(newJoke);
   console.log(jokes.slice(-1));
-  console.log("Success new joke added.");
+  res.json(newJoke);
 });
-//4. POST a new joke
 
 //5. PUT a joke
 
