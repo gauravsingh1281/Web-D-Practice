@@ -617,6 +617,22 @@ app.post("/jokes", (req, res) => {
 
 //5. PUT a joke
 
+app.put("/jokes/:id", (req, res) => {
+  const searchId = Number(req.params.id);
+  const updateJokeValue = {
+    id: searchId,
+    jokeText: req.body.text,
+    jokeType: req.body.type,
+  };
+
+  const foundIndex = jokes.findIndex((joke) => {
+    return joke.id === searchId;
+  });
+
+  jokes[foundIndex] = updateJokeValue;
+  res.json(updateJokeValue);
+});
+
 //6. PATCH a joke
 
 //7. DELETE Specific joke
