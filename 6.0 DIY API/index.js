@@ -635,6 +635,25 @@ app.put("/jokes/:id", (req, res) => {
 
 //6. PATCH a joke
 
+app.patch("/jokes/:id", (req, res) => {
+  const searchId = Number(req.params.id);
+  const existingElement = jokes.find((joke) => {
+    return joke.id === searchId;
+  });
+  const updatedJokeValue = {
+    id: searchId,
+    jokeText: req.body.text || existingElement.jokeText,
+    jokeType: req.body.type || existingElement.jokeType,
+  };
+
+  const existingIndex = jokes.findIndex((joke) => {
+    return joke.id === searchId;
+  });
+  jokes[existingIndex] = updatedJokeValue;
+  console.log(jokes[existingIndex]);
+  res.json(updatedJokeValue);
+});
+
 //7. DELETE Specific joke
 
 //8. DELETE All jokes
